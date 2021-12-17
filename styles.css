@@ -1,0 +1,254 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    font-size: 50px;
+
+}
+nav{
+    width: 100%;
+    background: #f0adbf;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.portrait{
+  float: right;
+  display: flex;
+  margin-right: 47%;
+  margin-left: 5%;
+  width: 1%;
+  height: 600px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+li{
+    float: left;
+    color: #332f2c;
+}
+a{
+    padding: 40px;
+    width: 200px;
+    display: block;
+    text-decoration: none;
+    color: #332f2c;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+
+
+}
+#section1{
+    height: auto;
+    background: #f0adbf;
+    display: inline-block;
+    width: 100%;
+    color: #332f2c;
+}
+
+.grid-container{
+    display: grid;
+    justify-content: center;
+    grid-row: auto;
+    grid-template-areas:
+    "p p"
+    "u u"
+    "d d"
+    "w r"
+    "g g";
+
+}
+.drinkwater{
+    grid-area: w;
+    justify-content: center;
+    width: 400px;
+
+}
+.robotbuild{
+    grid-area: r;
+    width: 500px;
+}
+.paradox{
+    grid-area: p;
+    width: 900px;
+}
+.ungdom{
+    grid-area: u;
+    width: 900px;
+}
+.denandenside{
+    grid-area: d;
+    width: 900px;
+}
+.robogal{
+    grid-area: g;
+    margin-left: 27%;
+    margin-bottom: 10%;
+}
+.gif{
+    margin: auto;
+    padding: 0 30%;
+
+}
+
+#section2{
+    height: 2500px;
+    background: #332f2c;
+    display: inline-block;
+    width: 100%;
+    color: #f0adbf;
+}
+
+.aboutme-text{
+  margin-left: 7%;
+  margin-right: 4%;
+  font-size: 65%;
+}
+#section3{
+    height: 2500px;
+    background: #f0adbf;
+    display: inline-block;
+    width: 100%;
+    color: #332f2c;
+}
+.contact-text{
+  margin-left: 7%;
+}
+h1{
+    margin: 150px;
+    text-align: center;
+    padding: 0;
+}
+/* NOTE: Dette er konfiguering til desktop */
+@media screen and (min-device-width: 600px){
+  html{
+      scroll-behavior: smooth;
+  }
+  body{
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica;
+      font-size: 30px;
+  }
+
+  nav{
+      width: 100%;
+      background: #f0adbf;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      z-index: 1;
+}
+hr{
+  height: 10px;
+  width: 100%;
+  border-color: #332f2c;
+  background-color: #332f2c;
+}
+.portrait{
+  float: right;
+  display: flex;
+  margin-right: 30%;
+  margin-bottom: 20%;
+  width: 5px;
+  height: 600px;
+
+}
+
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-areas:
+    "p u r"
+    "d w g";
+
+
+
+}
+.paradox{
+    grid-area: p;
+
+}
+.ungdom{
+    grid-area: u;
+}
+.robotbuild{
+    grid-area: r;
+}
+.denandenside{
+    grid-area: d;
+}
+.drinkwater{
+    grid-area: w;
+
+
+}
+.robogal{
+  grid-area: g;
+  margin-right: 27%;
+}
+.gif{
+    margin: auto;
+    padding: 0 37%;
+
+}
+  ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  li{
+      float: left;
+  }
+  a{
+      padding: 20px;
+      width: 100px;
+      display: block;
+      text-decoration: none;
+      color: #332f2c;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+  }
+  #section1{
+      height: auto;
+      background: #f0adbf;
+      display: inline-block;
+      width: 100%;
+  }
+
+  #section2{
+      height: auto;
+      background: #332f2c;
+      display: inline-block;
+      width: 100%;
+  }
+
+
+  #section3{
+      height: auto;
+      background: #f0adbf;
+      display: inline-block;
+      width: 100%;
+  }
+  h1{
+      margin: 100px;
+      text-align: left;
+      padding: 0;
+    }
+}
